@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211030 21:14:03.153" rpa="false" schemaversion="2">
+<suite id="s1" name="TestLogin" source="C:\Users\Vlad\PycharmProjects\pythonProject2\Automation\TestLogin.robot">
+<kw name="Log" library="BuiltIn" type="SETUP">
+<arg>Test start</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211030 21:14:03.358" level="INFO">Test start</msg>
+<status status="PASS" starttime="20211030 21:14:03.358" endtime="20211030 21:14:03.358"/>
+</kw>
+<test id="s1-t1" name="Test#7 FunctionalTestInventoryButton">
+<kw name="Go to Registration Page" library="Utils" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${BROWSER}[0]</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211030 21:14:03.360" level="INFO">Opening browser 'Chrome' to base url 'https://inventory.edu-netcracker.com/pages/registration.xhtml'.</msg>
+<status status="PASS" starttime="20211030 21:14:03.360" endtime="20211030 21:14:04.589"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211030 21:14:06.590" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211030 21:14:04.589" endtime="20211030 21:14:06.590"/>
+</kw>
+<kw name="Registration Page Should Be Open" library="Utils">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211030 21:14:08.592" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211030 21:14:06.590" endtime="20211030 21:14:08.592"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211030 21:14:08.597" level="INFO">Page title is 'Registration'.</msg>
+<status status="PASS" starttime="20211030 21:14:08.592" endtime="20211030 21:14:08.597"/>
+</kw>
+<status status="PASS" starttime="20211030 21:14:06.590" endtime="20211030 21:14:08.598"/>
+</kw>
+<status status="PASS" starttime="20211030 21:14:03.359" endtime="20211030 21:14:08.598"/>
+</kw>
+<kw name="Go to Start Page" library="StartPage">
+<arg>User123</arg>
+<arg>Password123$</arg>
+<kw name="Click login" library="RegistrationPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath = //a[@class='button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211030 21:14:08.599" level="INFO">Clicking element 'xpath = //a[@class='button']'.</msg>
+<status status="PASS" starttime="20211030 21:14:08.599" endtime="20211030 21:14:08.686"/>
+</kw>
+<status status="PASS" starttime="20211030 21:14:08.598" endtime="20211030 21:14:08.686"/>
+</kw>
+<kw name="Login Page Should Be Open" library="Utils">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211030 21:14:10.700" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211030 21:14:08.687" endtime="20211030 21:14:10.700"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Login Page</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211030 21:14:10.705" level="INFO">Page title is 'Login Page'.</msg>
+<status status="PASS" starttime="20211030 21:14:10.701" endtime="20211030 21:14:10.705"/>
+</kw>
+<status status="PASS" starttime="20211030 21:14:08.686" endtime="20211030 21:14:10.705"/>
+</kw>
+<kw name="Fills login form" library="LoginPage">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211030 21:14:12.719" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211030 21:14:10.706" endtime="20211030 21:14:12.719"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name = j_username</arg>
+<arg>${userNameField}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211030 21:14:12.720" level="INFO">Typing text 'User123' into text field 'name = j_username'.</msg>
+<status status="PASS" starttime="20211030 21:14:12.719" endtime="20211030 21:14:12.773"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211030 21:14:14.780" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211030 21:14:12.773" endtime="20211030 21:14:14.780"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>name = j_password</arg>
+<arg>${passwordField}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20211030 21:14:14.782" level="INFO">Typing password into text field 'name = j_password'.</msg>
+<msg timestamp="20211030 21:14:14.813" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211030 21:14:14.844" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211030 21:14:14.780" endtime="20211030 21:14:14.845"/>
+</kw>
+<status status="PASS" starttime="20211030 21:14:10.705" endtime="20211030 21:14:14.845"/>
+</kw>
+<kw name="Click login" library="LoginPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name = submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211030 21:14:14.845" level="INFO">Clicking button 'name = submit'.</msg>
+<status status="PASS" starttime="20211030 21:14:14.845" endtime="20211030 21:14:15.224"/>
+</kw>
+<status status="PASS" starttime="20211030 21:14:14.845" endtime="20211030 21:14:15.224"/>
+</kw>
+<kw name="Start Page Should Be Open" library="Utils">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211030 21:14:17.237" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211030 21:14:15.225" endtime="20211030 21:14:17.237"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Top</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211030 21:14:41.585" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=95.0.4638.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011F3AB3+2505395]
+	Ordinal0 [0x0118AE41+2076225]
+	Ordinal0 [0x01092360+1057632]
+	Ordinal0 [0x01087484+1012868]
+	Ordinal0 [0x01087C86+1014918]
+	Ordinal0 [0x01089355+1020757]
+	Ordinal0 [0x01083463+996451]
+	Ordinal0 [0x010936B0+1062576]
+	Ordinal0 [0x010E4902+1394946]
+	Ordinal0 [0x010D58BB+1333435]
+	Ordinal0 [0x010B23E4+1188836]
+	Ordinal0 [0x010B323F+1192511]
+	GetHandleVerifier [0x0137CB36+1554566]
+	GetHandleVerifier [0x01424A0C+2242396]
+	GetHandleVerifier [0x01280E0B+523099]
+	GetHandleVerifier [0x0127FEB0+519168]
+	Ordinal0 [0x011902FD+2097917]
+	Ordinal0 [0x01194388+2114440]
+	Ordinal0 [0x011944C2+2114754]
+	Ordinal0 [0x0119E041+2154561]
+	BaseThreadInitThunk [0x76F3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77627A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77627A6E+238]
+</msg>
+<status status="FAIL" starttime="20211030 21:14:29.397" endtime="20211030 21:14:41.586"/>
+</kw>
+<msg timestamp="20211030 21:14:41.586" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=95.0.4638.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011F3AB3+2505395]
+	Ordinal0 [0x0118AE41+2076225]
+	Ordinal0 [0x01092360+1057632]
+	Ordinal0 [0x01087484+1012868]
+	Ordinal0 [0x01087C86+1014918]
+	Ordinal0 [0x01089355+1020757]
+	Ordinal0 [0x01083463+996451]
+	Ordinal0 [0x010936B0+1062576]
+	Ordinal0 [0x010E4902+1394946]
+	Ordinal0 [0x010D58BB+1333435]
+	Ordinal0 [0x010B23E4+1188836]
+	Ordinal0 [0x010B323F+1192511]
+	GetHandleVerifier [0x0137CB36+1554566]
+	GetHandleVerifier [0x01424A0C+2242396]
+	GetHandleVerifier [0x01280E0B+523099]
+	GetHandleVerifier [0x0127FEB0+519168]
+	Ordinal0 [0x011902FD+2097917]
+	Ordinal0 [0x01194388+2114440]
+	Ordinal0 [0x011944C2+2114754]
+	Ordinal0 [0x0119E041+2154561]
+	BaseThreadInitThunk [0x76F3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77627A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77627A6E+238]
+</msg>
+<msg timestamp="20211030 21:14:41.596" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=95.0.4638.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011F3AB3+2505395]
+	Ordinal0 [0x0118AE41+2076225]
+	Ordinal0 [0x01092360+1057632]
+	Ordinal0 [0x01087484+1012868]
+	Ordinal0 [0x01087C86+1014918]
+	Ordinal0 [0x01089355+1020757]
+	Ordinal0 [0x01083463+996451]
+	Ordinal0 [0x010936B0+1062576]
+	Ordinal0 [0x010E4902+1394946]
+	Ordinal0 [0x010D58BB+1333435]
+	Ordinal0 [0x010B23E4+1188836]
+	Ordinal0 [0x010B323F+1192511]
+	GetHandleVerifier [0x0137CB36+1554566]
+	GetHandleVerifier [0x01424A0C+2242396]
+	GetHandleVerifier [0x01280E0B+523099]
+	GetHandleVerifier [0x0127FEB0+519168]
+	Ordinal0 [0x011902FD+2097917]
+	Ordinal0 [0x01194388+2114440]
+	Ordinal0 [0x011944C2+2114754]
+	Ordinal0 [0x0119E041+2154561]
+	BaseThreadInitThunk [0x76F3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77627A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77627A6E+238]
+</msg>
+<status status="FAIL" starttime="20211030 21:14:17.237" endtime="20211030 21:14:41.596"/>
+</kw>
+<status status="FAIL" starttime="20211030 21:14:15.224" endtime="20211030 21:14:41.597"/>
+</kw>
+<status status="FAIL" starttime="20211030 21:14:08.598" endtime="20211030 21:14:41.598"/>
+</kw>
+<kw name="Open navigation checkbox" library="StartPage">
+<status status="NOT RUN" starttime="20211030 21:14:41.598" endtime="20211030 21:14:41.599"/>
+</kw>
+<kw name="Click inventory in checkbox" library="StartPage">
+<status status="NOT RUN" starttime="20211030 21:14:41.599" endtime="20211030 21:14:41.599"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211030 21:14:41.600" endtime="20211030 21:14:41.600"/>
+</kw>
+<kw name="Inventory Page Should Be Open" library="Utils">
+<status status="NOT RUN" starttime="20211030 21:14:41.601" endtime="20211030 21:14:41.601"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211030 21:14:41.601" endtime="20211030 21:14:43.643"/>
+</kw>
+<doc>This test case verifies that the user can select values from the dropdown and verify it</doc>
+<tag>TC7</tag>
+<status status="FAIL" starttime="20211030 21:14:03.359" endtime="20211030 21:14:43.644">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=95.0.4638.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011F3AB3+2505395]
+	Ordinal0 [0x0118AE41+2076225]
+	Ordinal0 [0x01092360+1057632]
+	Ordinal0 [0x01087484+1012868]
+	Ordinal0 [0x01087C86+1014918]
+	Ordinal0 [0x01089355+1020757]
+	Ordinal0 [0x01083463+996451]
+	Ordinal0 [0x010936B0+1062576]
+	Ordinal0 [0x010E4902+1394946]
+	Ordinal0 [0x010D58BB+1333435]
+	Ordinal0 [0x010B23E4+1188836]
+	Ordinal0 [0x010B323F+1192511]
+	GetHandleVerifier [0x0137CB36+1554566]
+	GetHandleVerifier [0x01424A0C+2242396]
+	GetHandleVerifier [0x01280E0B+523099]
+	GetHandleVerifier [0x0127FEB0+519168]
+	Ordinal0 [0x011902FD+2097917]
+	Ordinal0 [0x01194388+2114440]
+	Ordinal0 [0x011944C2+2114754]
+	Ordinal0 [0x0119E041+2154561]
+	BaseThreadInitThunk [0x76F3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77627A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77627A6E+238]
+</status>
+</test>
+<kw name="Log" library="BuiltIn" type="TEARDOWN">
+<arg>Test end</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211030 21:14:43.645" level="INFO">Test end</msg>
+<status status="PASS" starttime="20211030 21:14:43.645" endtime="20211030 21:14:43.645"/>
+</kw>
+<status status="FAIL" starttime="20211030 21:14:03.154" endtime="20211030 21:14:43.645"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">TC7</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestLogin">TestLogin</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211030 21:14:41.586" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=95.0.4638.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011F3AB3+2505395]
+	Ordinal0 [0x0118AE41+2076225]
+	Ordinal0 [0x01092360+1057632]
+	Ordinal0 [0x01087484+1012868]
+	Ordinal0 [0x01087C86+1014918]
+	Ordinal0 [0x01089355+1020757]
+	Ordinal0 [0x01083463+996451]
+	Ordinal0 [0x010936B0+1062576]
+	Ordinal0 [0x010E4902+1394946]
+	Ordinal0 [0x010D58BB+1333435]
+	Ordinal0 [0x010B23E4+1188836]
+	Ordinal0 [0x010B323F+1192511]
+	GetHandleVerifier [0x0137CB36+1554566]
+	GetHandleVerifier [0x01424A0C+2242396]
+	GetHandleVerifier [0x01280E0B+523099]
+	GetHandleVerifier [0x0127FEB0+519168]
+	Ordinal0 [0x011902FD+2097917]
+	Ordinal0 [0x01194388+2114440]
+	Ordinal0 [0x011944C2+2114754]
+	Ordinal0 [0x0119E041+2154561]
+	BaseThreadInitThunk [0x76F3FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77627A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77627A6E+238]
+</msg>
+</errors>
+</robot>
