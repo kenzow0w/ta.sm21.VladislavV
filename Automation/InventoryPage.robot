@@ -5,6 +5,11 @@ Resource     RegistrationPage.robot
 Resource     LoginPage.robot
 Resource     StartPage.robot
 
+
+*** Variables ***
+@{tabElement}    //*[@id="j_idt76:tabView"]/ul/li[7]/a      {\n}//*[@id="j_idt76:tabView"]/ul/li[6]/a   //*[@id="j_idt76:tabView"]/ul/li[5]/a   //*[@id="j_idt76:tabView"]/ul/li[4]/a   //*[@id="j_idt76:tabView"]/ul/li[3]/a
+
+
 *** Keywords ***
 Go to Inventory page
     StartPage.Go to Start Page    Volodin_admin       Password123$
@@ -20,6 +25,11 @@ Click cancel
     click button    xpath://*[@id="table_header"]/table/tbody/tr/td[2]/a
 Open next tab
     click button    //*[@id="j_idt76:tabView"]/ul/li[2]/a
+
+Choice tab
+    [Arguments]    ${element}
+    click element    ${element}
+
 Create country
     click button    xpath://*[@id="table_header"]/table/tbody/tr/td[1]/a
     Wait Until Page Contains Element    Create country
@@ -56,3 +66,4 @@ Enter information about building
     input text    xpath://*[@id="j_idt74:number"]           ${number}
     input text    xpath://*[@id="j_idt74:square"]           ${square}
     select from list by index   xpath://*[@id="j_idt74:isconnected"]       ${isConnected}
+
