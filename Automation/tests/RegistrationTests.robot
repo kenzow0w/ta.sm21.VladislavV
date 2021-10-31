@@ -14,10 +14,9 @@ Test Teardown   Close Browser
 *** Variables ***
 ${user}         Useeexeerzxcaasdq12x3an1b4w1s2q421o4
 
-# robot -i TC1 Tests.robot
-# robot -i TC2 Tests.robot
-# robot -i TC3456 Tests.robot
-# robot -i TC7 Tests.robot
+# robot -i TC1 RegistrationTests.robot
+# robot -i TC2 RegistrationTests.robot
+# robot -i TC3456 RegistrationTests.robot
 
 *** Test Cases ***
 Test#1 SuccessRegistration
@@ -39,7 +38,7 @@ Test#1 SuccessRegistration
 
 
 Test#2 testNecessaryUserNameField
-    [documentation]  This test case verifies that username field must have at least 1 digit or 1 Latin letter
+    [documentation]  This test case verifies that username field must have at least 1 digit letter
     [tags]  TC2
     Fills registration form
     sleep    2s
@@ -51,7 +50,7 @@ Test#2 testNecessaryUserNameField
     make screenshot    test2_step2
 
 Test#2.1 testNecessaryUserNameField
-    [documentation]  This test case verifies that username field must have at least 1 digit or 1 Latin letter
+    [documentation]  This test case verifies that username field must have at least 1 Latin letter
     [tags]  TC2
     Fills registration form
     sleep    2s
@@ -64,7 +63,7 @@ Test#2.1 testNecessaryUserNameField
 
 
 Test#3.1 testNecessaryPasswordField
-    [documentation]  This test case verifies that the user can select values from the dropdown and verify it
+    [documentation]  This test case verifies requirements for password field
     [tags]  TC3456
     Fills registration form
     Registration Set Username      UserName123      #<<<     username musn't repeat
@@ -78,7 +77,7 @@ Test#3.1 testNecessaryPasswordField
 
 
 Test#3.2 testRequirementPasswordField
-    [documentation]  This test case verifies that the user can select values from the dropdown and verify it
+    [documentation]  This test case verifies requirements for password field
     [tags]  TC3456
     Fills registration form
     Registration Set Username      UserName123      #<<<     username musn't repeat
@@ -92,7 +91,7 @@ Test#3.2 testRequirementPasswordField
 
 
 Test#3.3 testRequirementPasswordField2
-    [documentation]  This test case verifies that the user can select values from the dropdown and verify it
+    [documentation]  This test case verifies requirements for password field
     [tags]  TC3456
     Fills registration form
     Registration Set Username      UserName123      #<<<     Username musn't repeat
@@ -105,7 +104,7 @@ Test#3.3 testRequirementPasswordField2
     make screenshot    test3.3_step2
 
 Test#3.4 testRequirementPasswordField3
-    [documentation]  This test case verifies that the user can select values from the dropdown and verify it
+    [documentation]  This test case verifies requirements for password field
     [tags]  TC3456
     Fills registration form
     Registration Set Username      UserName123      #<<<     Username musn't repeat
@@ -118,7 +117,7 @@ Test#3.4 testRequirementPasswordField3
     make screenshot    test3.4_step2
 
 Test#3.5 testRequirementPasswordField4
-    [documentation]  This test case verifies that the user can select values from the dropdown and verify it
+    [documentation]  This test case verifies requirements for password field
     [tags]  TC3456
     Fills registration form
     Registration Set Username      UserName123      #<<<     Username musn't repeat
@@ -132,7 +131,7 @@ Test#3.5 testRequirementPasswordField4
 
 
 Test#3.6 testRequirementPasswordField5
-    [documentation]  This test case verifies that the user can select values from the dropdown and verify it
+    [documentation]  This test case verifies requirements for password field
     [tags]  TC3456
     Fills registration form
     Registration Set Username      UserName123      #<<<     Username musn't repeat
@@ -145,7 +144,7 @@ Test#3.6 testRequirementPasswordField5
     make screenshot     test3.6_step2
 
 Test#3.7 testRequirementPasswordField6
-    [documentation]  This test case verifies that the user can select values from the dropdown and verify it
+    [documentation]  This test case verifies requirements for password field
     [tags]  TC3456
     Fills registration form
     Registration Set Username      UserName123      #<<<     Username musn't repeat
@@ -158,7 +157,7 @@ Test#3.7 testRequirementPasswordField6
     make screenshot     test3.7_step2
 
 Test#4 testNecessaryEmailField
-    [documentation]  This test case verifies that the user can select values from the dropdown and verify it
+    [documentation]  This test case verifies that email field is necessary
     [tags]  TC3456
     Fills registration form
     Registration Set Username      UserName123      #<<<     Username musn't repeat
@@ -172,7 +171,7 @@ Test#4 testNecessaryEmailField
 
 
 Test#5 testNotNecessaryRoleField
-    [documentation]  This test case verifies that the user can select values from the dropdown and verify it
+    [documentation]  This test case verifies functional options role field
     [tags]  TC3456
     Fills registration form
     Registration Set Username      UserName123      #<<<     Username musn't repeat

@@ -20,14 +20,6 @@ Set Username
     [Arguments]    ${username}
     clear element text    name = j_username
    Input text      name = j_username       ${username}
-#   ${UserNameField} =    Set Variable    ${username}
-#    [return]        ${UserNameField}
-
-
-#    ${userNameField}    Set Variable    ${username}
-#    Input Text      name = j_username    ${username}
-##    ${userNameField}    get value    ${username}
-
 
 Set Password
     [Arguments]    ${password}

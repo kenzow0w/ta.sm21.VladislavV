@@ -17,7 +17,7 @@ Fills registration form
     Input Password      id=registerForm:password        ${passwordField}
     Input Text    id=registerForm:confirmPassword       ${confirmPasswordField}
     Input Text         id=registerForm:email            ${emailField}
-    select from list by index   registerForm:role       1
+    select from list by index   id=registerForm:role       1
 
 Click registration
     click button        name = registerForm:j_idt26

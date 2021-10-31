@@ -1,70 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211030 21:31:56.685" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211031 23:03:10.163" rpa="false" schemaversion="2">
 <suite id="s1" name="TestInventory" source="C:\Users\Vlad\PycharmProjects\pythonProject2\Automation\tests\TestInventory.robot">
 <kw name="Log" library="BuiltIn" type="SETUP">
 <arg>Test start</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211030 21:31:56.900" level="INFO">Test start</msg>
-<status status="PASS" starttime="20211030 21:31:56.900" endtime="20211030 21:31:56.900"/>
+<msg timestamp="20211031 23:03:10.633" level="INFO">Test start</msg>
+<status status="PASS" starttime="20211031 23:03:10.633" endtime="20211031 23:03:10.633"/>
 </kw>
-<test id="s1-t1" name="Test#7 FunctionalTestInventoryButton">
-<kw name="Go to Registration Page" library="Utils" type="SETUP">
+<test id="s1-t1" name="Test#10 ButtonEditEqualCreateObject2">
+<kw name="Go to Inventory page" library="InventoryPage" type="SETUP">
+<kw name="Go to Start Page" library="StartPage">
+<arg>Volodin_admin</arg>
+<arg>Password123$</arg>
+<kw name="Go to Registration Page" library="Utils">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${BROWSER}[0]</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211030 21:31:56.901" level="INFO">Opening browser 'Chrome' to base url 'https://inventory.edu-netcracker.com/pages/registration.xhtml'.</msg>
-<status status="PASS" starttime="20211030 21:31:56.901" endtime="20211030 21:31:58.128"/>
+<msg timestamp="20211031 23:03:10.639" level="INFO">Opening browser 'Chrome' to base url 'https://inventory.edu-netcracker.com/pages/registration.xhtml'.</msg>
+<status status="PASS" starttime="20211031 23:03:10.638" endtime="20211031 23:03:13.114"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:00.137" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:31:58.128" endtime="20211030 21:32:00.137"/>
+<msg timestamp="20211031 23:03:15.126" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211031 23:03:13.115" endtime="20211031 23:03:15.126"/>
 </kw>
 <kw name="Registration Page Should Be Open" library="Utils">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:02.141" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:00.137" endtime="20211030 21:32:02.141"/>
+<msg timestamp="20211031 23:03:17.140" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211031 23:03:15.128" endtime="20211031 23:03:17.140"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Registration</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:32:02.146" level="INFO">Page title is 'Registration'.</msg>
-<status status="PASS" starttime="20211030 21:32:02.141" endtime="20211030 21:32:02.146"/>
+<msg timestamp="20211031 23:03:17.148" level="INFO">Page title is 'Registration'.</msg>
+<status status="PASS" starttime="20211031 23:03:17.141" endtime="20211031 23:03:17.148"/>
 </kw>
-<status status="PASS" starttime="20211030 21:32:00.137" endtime="20211030 21:32:02.146"/>
+<status status="PASS" starttime="20211031 23:03:15.127" endtime="20211031 23:03:17.148"/>
 </kw>
-<status status="PASS" starttime="20211030 21:31:56.901" endtime="20211030 21:32:02.146"/>
+<status status="PASS" starttime="20211031 23:03:10.637" endtime="20211031 23:03:17.149"/>
 </kw>
-<kw name="Go to Start Page" library="StartPage">
-<arg>User123</arg>
-<arg>Password123$</arg>
 <kw name="Click login" library="RegistrationPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = //a[@class='button']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:02.148" level="INFO">Clicking element 'xpath = //a[@class='button']'.</msg>
-<status status="PASS" starttime="20211030 21:32:02.147" endtime="20211030 21:32:02.239"/>
+<msg timestamp="20211031 23:03:17.150" level="INFO">Clicking element 'xpath = //a[@class='button']'.</msg>
+<status status="PASS" starttime="20211031 23:03:17.150" endtime="20211031 23:03:17.574"/>
 </kw>
-<status status="PASS" starttime="20211030 21:32:02.147" endtime="20211030 21:32:02.239"/>
+<status status="PASS" starttime="20211031 23:03:17.149" endtime="20211031 23:03:17.575"/>
 </kw>
 <kw name="Login Page Should Be Open" library="Utils">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:04.248" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:02.240" endtime="20211030 21:32:04.248"/>
+<msg timestamp="20211031 23:03:19.576" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211031 23:03:17.575" endtime="20211031 23:03:19.577"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Login Page</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:32:04.251" level="INFO">Page title is 'Login Page'.</msg>
-<status status="PASS" starttime="20211030 21:32:04.248" endtime="20211030 21:32:04.252"/>
+<msg timestamp="20211031 23:03:19.589" level="INFO">Page title is 'Login Page'.</msg>
+<status status="PASS" starttime="20211031 23:03:19.577" endtime="20211031 23:03:19.590"/>
 </kw>
-<status status="PASS" starttime="20211030 21:32:02.240" endtime="20211030 21:32:04.252"/>
+<status status="PASS" starttime="20211031 23:03:17.575" endtime="20211031 23:03:19.590"/>
 </kw>
 <kw name="Fills login form" library="LoginPage">
 <arg>${username}</arg>
@@ -72,471 +73,283 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:06.262" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:04.252" endtime="20211030 21:32:06.262"/>
+<msg timestamp="20211031 23:03:21.606" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211031 23:03:19.592" endtime="20211031 23:03:21.606"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name = j_username</arg>
 <arg>${userNameField}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:06.263" level="INFO">Typing text 'User123' into text field 'name = j_username'.</msg>
-<status status="PASS" starttime="20211030 21:32:06.262" endtime="20211030 21:32:06.317"/>
+<msg timestamp="20211031 23:03:21.608" level="INFO">Typing text 'Volodin_admin' into text field 'name = j_username'.</msg>
+<status status="PASS" starttime="20211031 23:03:21.607" endtime="20211031 23:03:21.762"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:08.327" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:06.317" endtime="20211030 21:32:08.327"/>
+<msg timestamp="20211031 23:03:23.770" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211031 23:03:21.762" endtime="20211031 23:03:23.770"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>name = j_password</arg>
 <arg>${passwordField}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:08.328" level="INFO">Typing password into text field 'name = j_password'.</msg>
-<msg timestamp="20211030 21:32:08.357" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211030 21:32:08.387" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211030 21:32:08.327" endtime="20211030 21:32:08.387"/>
+<msg timestamp="20211031 23:03:23.771" level="INFO">Typing password into text field 'name = j_password'.</msg>
+<msg timestamp="20211031 23:03:23.843" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211031 23:03:23.941" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211031 23:03:23.770" endtime="20211031 23:03:23.942"/>
 </kw>
-<status status="PASS" starttime="20211030 21:32:04.252" endtime="20211030 21:32:08.387"/>
-</kw>
-<kw name="Click login" library="LoginPage">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>name = submit</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:08.387" level="INFO">Clicking button 'name = submit'.</msg>
-<status status="PASS" starttime="20211030 21:32:08.387" endtime="20211030 21:32:09.115"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:08.387" endtime="20211030 21:32:09.115"/>
-</kw>
-<kw name="Start Page Should Be Open" library="Utils">
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:11.125" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:09.116" endtime="20211030 21:32:11.125"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Top</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:32:11.130" level="INFO">Page title is 'Top'.</msg>
-<status status="PASS" starttime="20211030 21:32:11.126" endtime="20211030 21:32:11.130"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:09.115" endtime="20211030 21:32:11.130"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:02.147" endtime="20211030 21:32:11.130"/>
-</kw>
-<kw name="Open navigation checkbox" library="StartPage">
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>xpath://*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/a</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20211030 21:32:11.131" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/a'.</msg>
-<status status="PASS" starttime="20211030 21:32:11.131" endtime="20211030 21:32:11.406"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:13.419" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:11.406" endtime="20211030 21:32:13.419"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:11.131" endtime="20211030 21:32:13.420"/>
-</kw>
-<kw name="Click inventory in checkbox" library="StartPage">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/ul/li[1]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211030 21:32:13.420" endtime="20211030 21:32:13.429"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/ul/li[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:13.429" level="INFO">Clicking element 'xpath://*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/ul/li[1]'.</msg>
-<status status="PASS" starttime="20211030 21:32:13.429" endtime="20211030 21:32:13.957"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:13.420" endtime="20211030 21:32:13.957"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:15.960" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:13.957" endtime="20211030 21:32:15.960"/>
-</kw>
-<kw name="Inventory Page Should Be Open" library="Utils">
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:17.972" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:15.961" endtime="20211030 21:32:17.972"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Inventory</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:32:17.975" level="INFO">Page title is 'Inventory'.</msg>
-<status status="PASS" starttime="20211030 21:32:17.972" endtime="20211030 21:32:17.976"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:15.961" endtime="20211030 21:32:17.976"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211030 21:32:17.977" endtime="20211030 21:32:20.065"/>
-</kw>
-<doc>This test case verifies that the user can select values from the dropdown and verify it</doc>
-<tag>TC7</tag>
-<status status="PASS" starttime="20211030 21:31:56.900" endtime="20211030 21:32:20.065"/>
-</test>
-<test id="s1-t2" name="Test#7.1 FunctionalTestInventoryButton">
-<kw name="Go to Registration Page" library="Utils" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${BROWSER}[0]</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211030 21:32:20.067" level="INFO">Opening browser 'Chrome' to base url 'https://inventory.edu-netcracker.com/pages/registration.xhtml'.</msg>
-<status status="PASS" starttime="20211030 21:32:20.067" endtime="20211030 21:32:21.275"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:23.289" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:21.275" endtime="20211030 21:32:23.289"/>
-</kw>
-<kw name="Registration Page Should Be Open" library="Utils">
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:25.304" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:23.289" endtime="20211030 21:32:25.304"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Registration</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:32:25.308" level="INFO">Page title is 'Registration'.</msg>
-<status status="PASS" starttime="20211030 21:32:25.304" endtime="20211030 21:32:25.308"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:23.289" endtime="20211030 21:32:25.309"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:20.067" endtime="20211030 21:32:25.309"/>
-</kw>
-<kw name="Go to Start Page" library="StartPage">
-<arg>User123</arg>
-<arg>Password123$</arg>
-<kw name="Click login" library="RegistrationPage">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath = //a[@class='button']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:25.311" level="INFO">Clicking element 'xpath = //a[@class='button']'.</msg>
-<status status="PASS" starttime="20211030 21:32:25.311" endtime="20211030 21:32:25.407"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:25.310" endtime="20211030 21:32:25.407"/>
-</kw>
-<kw name="Login Page Should Be Open" library="Utils">
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:27.419" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:25.407" endtime="20211030 21:32:27.419"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Login Page</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:32:27.423" level="INFO">Page title is 'Login Page'.</msg>
-<status status="PASS" starttime="20211030 21:32:27.419" endtime="20211030 21:32:27.424"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:25.407" endtime="20211030 21:32:27.424"/>
-</kw>
-<kw name="Fills login form" library="LoginPage">
-<arg>${username}</arg>
-<arg>${password}</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:29.428" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:27.424" endtime="20211030 21:32:29.428"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name = j_username</arg>
-<arg>${userNameField}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:29.429" level="INFO">Typing text 'User123' into text field 'name = j_username'.</msg>
-<status status="PASS" starttime="20211030 21:32:29.428" endtime="20211030 21:32:29.483"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:31.486" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:29.483" endtime="20211030 21:32:31.486"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>name = j_password</arg>
-<arg>${passwordField}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:31.486" level="INFO">Typing password into text field 'name = j_password'.</msg>
-<msg timestamp="20211030 21:32:31.517" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211030 21:32:31.547" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211030 21:32:31.486" endtime="20211030 21:32:31.547"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:27.424" endtime="20211030 21:32:31.547"/>
+<status status="PASS" starttime="20211031 23:03:19.591" endtime="20211031 23:03:23.942"/>
 </kw>
 <kw name="Click login" library="LoginPage">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>name = submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:31.548" level="INFO">Clicking button 'name = submit'.</msg>
-<status status="PASS" starttime="20211030 21:32:31.548" endtime="20211030 21:32:31.853"/>
+<msg timestamp="20211031 23:03:23.944" level="INFO">Clicking button 'name = submit'.</msg>
+<status status="PASS" starttime="20211031 23:03:23.943" endtime="20211031 23:03:27.001"/>
 </kw>
-<status status="PASS" starttime="20211030 21:32:31.547" endtime="20211030 21:32:31.853"/>
+<status status="PASS" starttime="20211031 23:03:23.942" endtime="20211031 23:03:27.001"/>
 </kw>
 <kw name="Start Page Should Be Open" library="Utils">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:33.855" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:31.853" endtime="20211030 21:32:33.855"/>
+<msg timestamp="20211031 23:03:29.017" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211031 23:03:27.002" endtime="20211031 23:03:29.018"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Top</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:32:33.860" level="INFO">Page title is 'Top'.</msg>
-<status status="PASS" starttime="20211030 21:32:33.855" endtime="20211030 21:32:33.860"/>
+<msg timestamp="20211031 23:03:29.029" level="INFO">Page title is 'Top'.</msg>
+<status status="PASS" starttime="20211031 23:03:29.019" endtime="20211031 23:03:29.029"/>
 </kw>
-<status status="PASS" starttime="20211030 21:32:31.853" endtime="20211030 21:32:33.860"/>
+<status status="PASS" starttime="20211031 23:03:27.002" endtime="20211031 23:03:29.029"/>
 </kw>
-<status status="PASS" starttime="20211030 21:32:25.310" endtime="20211030 21:32:33.860"/>
+<status status="PASS" starttime="20211031 23:03:10.636" endtime="20211031 23:03:29.030"/>
 </kw>
 <kw name="Click inventory button" library="StartPage">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="inventory"]/a</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211030 21:32:33.861" endtime="20211030 21:32:33.871"/>
+<status status="PASS" starttime="20211031 23:03:29.032" endtime="20211031 23:03:29.058"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="inventory"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:33.871" level="INFO">Clicking element 'xpath://*[@id="inventory"]/a'.</msg>
-<status status="PASS" starttime="20211030 21:32:33.871" endtime="20211030 21:32:34.147"/>
+<msg timestamp="20211031 23:03:29.060" level="INFO">Clicking element 'xpath://*[@id="inventory"]/a'.</msg>
+<status status="PASS" starttime="20211031 23:03:29.059" endtime="20211031 23:03:31.051"/>
 </kw>
-<status status="PASS" starttime="20211030 21:32:33.861" endtime="20211030 21:32:34.147"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:36.148" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:34.148" endtime="20211030 21:32:36.148"/>
-</kw>
-<kw name="Inventory Page Should Be Open" library="Utils">
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:38.164" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:36.150" endtime="20211030 21:32:38.164"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Inventory</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:32:38.169" level="INFO">Page title is 'Inventory'.</msg>
-<status status="PASS" starttime="20211030 21:32:38.164" endtime="20211030 21:32:38.169"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:36.149" endtime="20211030 21:32:38.169"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211030 21:32:38.170" endtime="20211030 21:32:40.280"/>
-</kw>
-<doc>This test case verifies that the user can select values from the dropdown and verify it</doc>
-<tag>TC7</tag>
-<status status="PASS" starttime="20211030 21:32:20.066" endtime="20211030 21:32:40.281"/>
-</test>
-<test id="s1-t3" name="Test#7.2 FunctionalTestToolsButton">
-<kw name="Go to Registration Page" library="Utils" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${BROWSER}[0]</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211030 21:32:40.283" level="INFO">Opening browser 'Chrome' to base url 'https://inventory.edu-netcracker.com/pages/registration.xhtml'.</msg>
-<status status="PASS" starttime="20211030 21:32:40.283" endtime="20211030 21:32:41.476"/>
+<status status="PASS" starttime="20211031 23:03:29.030" endtime="20211031 23:03:31.052"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:43.490" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:41.477" endtime="20211030 21:32:43.490"/>
+<msg timestamp="20211031 23:03:33.066" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211031 23:03:31.052" endtime="20211031 23:03:33.066"/>
 </kw>
-<kw name="Registration Page Should Be Open" library="Utils">
+<status status="PASS" starttime="20211031 23:03:10.635" endtime="20211031 23:03:33.067"/>
+</kw>
+<kw name="Enter information about country" library="InventoryPage">
+<arg>Brazil</arg>
+<arg>Rio</arg>
+<arg>2</arg>
+<kw name="Create country" library="InventoryPage">
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:45.503" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:43.490" endtime="20211030 21:32:45.503"/>
+<msg timestamp="20211031 23:03:34.088" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211031 23:03:33.069" endtime="20211031 23:03:34.088"/>
 </kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Registration</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:32:45.509" level="INFO">Page title is 'Registration'.</msg>
-<status status="PASS" starttime="20211030 21:32:45.505" endtime="20211030 21:32:45.509"/>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://*[@class='button' and normalize-space() = 'Create country']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211031 23:03:34.089" endtime="20211031 23:03:34.109"/>
 </kw>
-<status status="PASS" starttime="20211030 21:32:43.490" endtime="20211030 21:32:45.510"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:40.283" endtime="20211030 21:32:45.510"/>
-</kw>
-<kw name="Go to Start Page" library="StartPage">
-<arg>User123</arg>
-<arg>Password123$</arg>
-<kw name="Click login" library="RegistrationPage">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath = //a[@class='button']</arg>
+<arg>xpath://*[@class='button' and normalize-space() = 'Create country']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:45.511" level="INFO">Clicking element 'xpath = //a[@class='button']'.</msg>
-<status status="PASS" starttime="20211030 21:32:45.511" endtime="20211030 21:32:45.603"/>
+<msg timestamp="20211031 23:03:34.110" level="INFO">Clicking element 'xpath://*[@class='button' and normalize-space() = 'Create country']'.</msg>
+<status status="PASS" starttime="20211031 23:03:34.109" endtime="20211031 23:03:34.559"/>
 </kw>
-<status status="PASS" starttime="20211030 21:32:45.511" endtime="20211030 21:32:45.604"/>
+<status status="PASS" starttime="20211031 23:03:33.068" endtime="20211031 23:03:34.560"/>
 </kw>
-<kw name="Login Page Should Be Open" library="Utils">
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:47.607" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:45.604" endtime="20211030 21:32:47.607"/>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Create country</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211031 23:03:34.560" endtime="20211031 23:03:34.583"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Login Page</arg>
+<arg>Create country</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:32:47.611" level="INFO">Page title is 'Login Page'.</msg>
-<status status="PASS" starttime="20211030 21:32:47.607" endtime="20211030 21:32:47.611"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:45.604" endtime="20211030 21:32:47.611"/>
-</kw>
-<kw name="Fills login form" library="LoginPage">
-<arg>${username}</arg>
-<arg>${password}</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:49.617" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:47.611" endtime="20211030 21:32:49.617"/>
+<msg timestamp="20211031 23:03:34.591" level="INFO">Page title is 'Create country'.</msg>
+<status status="PASS" starttime="20211031 23:03:34.583" endtime="20211031 23:03:34.591"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>name = j_username</arg>
-<arg>${userNameField}</arg>
+<arg>xpath://*[@id="j_idt74:name"]</arg>
+<arg>${country}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:49.618" level="INFO">Typing text 'User123' into text field 'name = j_username'.</msg>
-<status status="PASS" starttime="20211030 21:32:49.618" endtime="20211030 21:32:49.672"/>
+<msg timestamp="20211031 23:03:34.592" level="INFO">Typing text 'Brazil' into text field 'xpath://*[@id="j_idt74:name"]'.</msg>
+<status status="PASS" starttime="20211031 23:03:34.591" endtime="20211031 23:03:34.779"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="j_idt74:language"]</arg>
+<arg>${language}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211031 23:03:34.780" level="INFO">Typing text 'Rio' into text field 'xpath://*[@id="j_idt74:language"]'.</msg>
+<status status="PASS" starttime="20211031 23:03:34.779" endtime="20211031 23:03:34.917"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>xpath://*[@id="j_idt74:continent"]</arg>
+<arg>${continent}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211031 23:03:34.918" level="INFO">Selecting options from selection list 'xpath://*[@id="j_idt74:continent"]' by index 2.</msg>
+<status status="PASS" starttime="20211031 23:03:34.918" endtime="20211031 23:03:35.102"/>
+</kw>
+<status status="PASS" starttime="20211031 23:03:33.067" endtime="20211031 23:03:35.102"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:51.686" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:49.672" endtime="20211030 21:32:51.686"/>
+<msg timestamp="20211031 23:03:39.115" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20211031 23:03:35.103" endtime="20211031 23:03:39.115"/>
 </kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>name = j_password</arg>
-<arg>${passwordField}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:51.687" level="INFO">Typing password into text field 'name = j_password'.</msg>
-<msg timestamp="20211030 21:32:51.719" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211030 21:32:51.750" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211030 21:32:51.687" endtime="20211030 21:32:51.750"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:47.611" endtime="20211030 21:32:51.750"/>
-</kw>
-<kw name="Click login" library="LoginPage">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>name = submit</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:51.751" level="INFO">Clicking button 'name = submit'.</msg>
-<status status="PASS" starttime="20211030 21:32:51.751" endtime="20211030 21:32:52.049"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:51.751" endtime="20211030 21:32:52.049"/>
-</kw>
-<kw name="Start Page Should Be Open" library="Utils">
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:54.053" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:52.049" endtime="20211030 21:32:54.053"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Top</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:32:54.057" level="INFO">Page title is 'Top'.</msg>
-<status status="PASS" starttime="20211030 21:32:54.054" endtime="20211030 21:32:54.057"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:52.049" endtime="20211030 21:32:54.058"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:45.510" endtime="20211030 21:32:54.058"/>
-</kw>
-<kw name="Open navigation checkbox" library="StartPage">
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>xpath://*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/a</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20211030 21:32:54.060" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/a'.</msg>
-<status status="PASS" starttime="20211030 21:32:54.059" endtime="20211030 21:32:54.334"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:56.341" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:54.334" endtime="20211030 21:32:56.341"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:54.059" endtime="20211030 21:32:56.341"/>
-</kw>
-<kw name="Click tools" library="StartPage">
+<kw name="Click save" library="InventoryPage">
+<doc>Save the entered data and over to next step.</doc>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/ul/li[3]</arg>
+<arg>xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211030 21:32:56.342" endtime="20211030 21:32:56.351"/>
+<status status="PASS" starttime="20211031 23:03:39.119" endtime="20211031 23:03:39.142"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211031 23:03:39.143" level="INFO">Clicking button 'xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" starttime="20211031 23:03:39.142" endtime="20211031 23:03:40.152"/>
+</kw>
+<status status="PASS" starttime="20211031 23:03:39.116" endtime="20211031 23:03:40.152"/>
+</kw>
+<kw name="Click edit data" library="InventoryPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table_header"]/table/tbody/tr/td/a</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211031 23:03:40.153" endtime="20211031 23:03:40.170"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/ul/li[3]</arg>
+<arg>xpath://*[@id="table_header"]/table/tbody/tr/td/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211030 21:32:56.351" level="INFO">Clicking element 'xpath://*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/ul/li[3]'.</msg>
-<status status="PASS" starttime="20211030 21:32:56.351" endtime="20211030 21:32:56.485"/>
+<msg timestamp="20211031 23:03:40.171" level="INFO">Clicking element 'xpath://*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
+<status status="PASS" starttime="20211031 23:03:40.171" endtime="20211031 23:03:40.695"/>
 </kw>
-<status status="PASS" starttime="20211030 21:32:56.342" endtime="20211030 21:32:56.485"/>
+<status status="PASS" starttime="20211031 23:03:40.153" endtime="20211031 23:03:40.695"/>
+</kw>
+<kw name="Clear fields about country" library="InventoryPage">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Brazil | Edit</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211031 23:03:40.706" level="INFO">Page title is 'Brazil | Edit'.</msg>
+<status status="PASS" starttime="20211031 23:03:40.698" endtime="20211031 23:03:40.706"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="j_idt74:name"]</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211031 23:03:40.708" level="INFO">Typing text '' into text field 'xpath://*[@id="j_idt74:name"]'.</msg>
+<status status="PASS" starttime="20211031 23:03:40.706" endtime="20211031 23:03:40.845"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="j_idt74:language"]</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211031 23:03:40.847" level="INFO">Typing text '' into text field 'xpath://*[@id="j_idt74:language"]'.</msg>
+<status status="PASS" starttime="20211031 23:03:40.845" endtime="20211031 23:03:40.981"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>xpath://*[@id="j_idt74:continent"]</arg>
+<arg>0</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211031 23:03:40.982" level="INFO">Selecting options from selection list 'xpath://*[@id="j_idt74:continent"]' by index 0.</msg>
+<status status="PASS" starttime="20211031 23:03:40.982" endtime="20211031 23:03:41.106"/>
+</kw>
+<status status="PASS" starttime="20211031 23:03:40.697" endtime="20211031 23:03:41.107"/>
+</kw>
+<kw name="Edit information about country" library="InventoryPage">
+<arg>Russia</arg>
+<arg>Moscow</arg>
+<arg>0</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="j_idt74:name"]</arg>
+<arg>${country}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211031 23:03:41.109" level="INFO">Typing text 'Russia' into text field 'xpath://*[@id="j_idt74:name"]'.</msg>
+<status status="PASS" starttime="20211031 23:03:41.109" endtime="20211031 23:03:41.215"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="j_idt74:language"]</arg>
+<arg>${language}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211031 23:03:41.216" level="INFO">Typing text 'Moscow' into text field 'xpath://*[@id="j_idt74:language"]'.</msg>
+<status status="PASS" starttime="20211031 23:03:41.215" endtime="20211031 23:03:41.317"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>xpath://*[@id="j_idt74:continent"]</arg>
+<arg>${continent}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211031 23:03:41.319" level="INFO">Selecting options from selection list 'xpath://*[@id="j_idt74:continent"]' by index 0.</msg>
+<status status="PASS" starttime="20211031 23:03:41.317" endtime="20211031 23:03:41.386"/>
+</kw>
+<status status="PASS" starttime="20211031 23:03:41.108" endtime="20211031 23:03:41.387"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:32:58.497" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:56.486" endtime="20211030 21:32:58.497"/>
+<msg timestamp="20211031 23:03:45.398" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20211031 23:03:41.388" endtime="20211031 23:03:45.399"/>
 </kw>
-<kw name="Administrative tools Page Should Be Open" library="Utils">
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211030 21:33:00.511" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211030 21:32:58.499" endtime="20211030 21:33:00.511"/>
+<kw name="Click save" library="InventoryPage">
+<doc>Save the entered data and over to next step.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211031 23:03:45.401" endtime="20211031 23:03:45.416"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211031 23:03:45.417" level="INFO">Clicking button 'xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" starttime="20211031 23:03:45.416" endtime="20211031 23:03:46.167"/>
+</kw>
+<status status="PASS" starttime="20211031 23:03:45.400" endtime="20211031 23:03:46.167"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Administrative tools</arg>
+<arg>Russia</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211030 21:33:00.515" level="INFO">Page title is 'Administrative tools'.</msg>
-<status status="PASS" starttime="20211030 21:33:00.511" endtime="20211030 21:33:00.515"/>
-</kw>
-<status status="PASS" starttime="20211030 21:32:58.498" endtime="20211030 21:33:00.515"/>
+<msg timestamp="20211031 23:03:46.177" level="INFO">Page title is 'Russia'.</msg>
+<status status="PASS" starttime="20211031 23:03:46.169" endtime="20211031 23:03:46.177"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211030 21:33:00.516" endtime="20211030 21:33:02.596"/>
+<status status="PASS" starttime="20211031 23:03:46.178" endtime="20211031 23:03:48.363"/>
 </kw>
-<doc>This test case verifies that the user can select values from the dropdown and verify it</doc>
-<tag>TC7</tag>
-<status status="PASS" starttime="20211030 21:32:40.282" endtime="20211030 21:33:02.597"/>
+<doc>This test case verifies enter information about equipment</doc>
+<tag>TC10</tag>
+<status status="PASS" starttime="20211031 23:03:10.633" endtime="20211031 23:03:48.365"/>
 </test>
 <kw name="Log" library="BuiltIn" type="TEARDOWN">
 <arg>Test end</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211030 21:33:02.599" level="INFO">Test end</msg>
-<status status="PASS" starttime="20211030 21:33:02.598" endtime="20211030 21:33:02.599"/>
+<msg timestamp="20211031 23:03:48.370" level="INFO">Test end</msg>
+<status status="PASS" starttime="20211031 23:03:48.369" endtime="20211031 23:03:48.370"/>
 </kw>
-<status status="PASS" starttime="20211030 21:31:56.686" endtime="20211030 21:33:02.599"/>
+<status status="PASS" starttime="20211031 23:03:10.165" endtime="20211031 23:03:48.370"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="3" fail="0" skip="0">TC7</stat>
+<stat pass="1" fail="0" skip="0">TC10</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="TestInventory">TestInventory</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestInventory">TestInventory</stat>
 </suite>
 </statistics>
 <errors>
