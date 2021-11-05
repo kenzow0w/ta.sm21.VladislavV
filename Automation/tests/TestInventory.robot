@@ -1,15 +1,20 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource     ../Utils.robot
-Resource    ../LoginPage.robot
-Resource    ../RegistrationPage.robot
-Resource    ../StartPage.robot
-Resource    ../InventoryPage.robot
+Resource     ../service/Utils.robot
+Resource    ../service/LoginPage.robot
+Resource    ../service/RegistrationPage.robot
+Resource    ../service/StartPage.robot
+Resource    ../service/InventoryPage.robot
+Resource    ../service/SearchFunctional.robot
 Suite Setup    Log      Test start
 Suite Teardown      Log     Test end
-Test Setup    Go to Inventory page
+Test Setup    Go to Inventory page      ${username}       ${password}
 Test Teardown   Close Browser
 
+
+*** Variables ***
+${username}     Volodin_admin
+${password}     Password123$
 
 #robot -i TC8,10 TestInventory.robot
 *** Test Cases ***

@@ -1,14 +1,19 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource     ../Utils.robot
-Resource    ../LoginPage.robot
-Resource    ../RegistrationPage.robot
-Resource    ../StartPage.robot
-Resource    ../InventoryPage.robot
+Resource     ../service/Utils.robot
+Resource    ../service/LoginPage.robot
+Resource    ../service/RegistrationPage.robot
+Resource    ../service/StartPage.robot
+Resource    ../service/InventoryPage.robot
+Resource    ../service/SearchFunctional.robot
 Suite Setup    Log      Test start
 Suite Teardown      Log     Test end
-Test Setup    StartPage.Go to Start Page        User123       Password123$
+Test Setup    StartPage.Go to Start Page        ${username}       ${password}
 Test Teardown   Close Browser
+
+*** Variables ***
+${username}     User123
+${password}     Password123$
 
 #robot -i TC7 TestStart.robot
 *** Test Cases ***
@@ -38,27 +43,28 @@ Test#7.2 FunctionalTestToolsButton
 
 Test#7.3 FunctionalTestSearch
     [documentation]  This test case verifies functional search field
-    [tags]  TC7
+    [tags]  TC7.1
     StartPage.Open search checkbox
-    StartPage.Check find country
+    SearchFunctional.Check find country
+    make screenshot    test7.3_step1
     StartPage.Open search checkbox
-    StartPage.Check find city
+    SearchFunctional.Check find city
     StartPage.Open search checkbox
-    StartPage.Check find building
+    SearchFunctional.Check find building
     StartPage.Open search checkbox
-    StartPage.Check find floor
+    SearchFunctional.Check find floor
     StartPage.Open search checkbox
-    StartPage.Check find room
+    SearchFunctional.Check find room
     StartPage.Open search checkbox
-    StartPage.Check find rack
+    SearchFunctional.Check find rack
     StartPage.Open search checkbox
-    StartPage.Check find device
+    SearchFunctional.Check find device
     StartPage.Open search checkbox
-    StartPage.Check find POS terminal
+    SearchFunctional.Check find POS terminal
     StartPage.Open search checkbox
-    StartPage.Check find pay box
+    SearchFunctional.Check find pay box
     StartPage.Open search checkbox
-    StartPage.Check find ATM
+    SearchFunctional.Check find ATM
     sleep   2s
 
 
