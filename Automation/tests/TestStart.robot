@@ -1,13 +1,10 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource     ../service/Utils.robot
-Resource    ../service/LoginPage.robot
-Resource    ../service/RegistrationPage.robot
 Resource    ../service/StartPage.robot
-Resource    ../service/InventoryPage.robot
 Resource    ../service/SearchFunctional.robot
-Suite Setup    Log      Test start
-Suite Teardown      Log     Test end
+Suite Setup    Log to Console      Test start
+Suite Teardown      Log to Console     Test end
 Test Setup    StartPage.Go to Start Page        ${username}       ${password}
 Test Teardown   Close Browser
 
@@ -66,5 +63,4 @@ Test#7.3 FunctionalTestSearch
     StartPage.Open search checkbox
     SearchFunctional.Check find ATM
     sleep   2s
-
 

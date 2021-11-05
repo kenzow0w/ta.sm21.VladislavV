@@ -1,11 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource     ../service/Utils.robot
-Resource    ../service/LoginPage.robot
-Resource    ../service/RegistrationPage.robot
-Resource    ../service/StartPage.robot
 Resource    ../service/InventoryPage.robot
-Resource    ../service/SearchFunctional.robot
 Suite Setup    Log      Test start
 Suite Teardown      Log     Test end
 Test Setup    Go to Inventory page      ${username}       ${password}

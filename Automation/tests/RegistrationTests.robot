@@ -1,18 +1,18 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource     ../Utils.robot
-Resource    ../LoginPage.robot
-Resource    ../RegistrationPage.robot
-Resource    ../StartPage.robot
-Resource    ../InventoryPage.robot
-Suite Setup    Log      Test start
-Suite Teardown      Log     Test end
+Resource     ../service/Utils.robot
+Resource    ../service/LoginPage.robot
+Resource    ../service/RegistrationPage.robot
+Resource    ../service/StartPage.robot
+Resource    ../service/InventoryPage.robot
+Suite Setup    Log to Console      Test start
+Suite Teardown      Log to Console     Test end
 Test Setup    Go to Registration Page
 Test Teardown   Close Browser
 
 
 *** Variables ***
-${user}         Useeexeerzxcaasdq12x3an1b4w1s2q421o4
+${user}         Useeexeerzxcaasdq12x3an1b4w1s2q421o44
 
 # robot -i TC1 RegistrationTests.robot
 # robot -i TC2 RegistrationTests.robot
@@ -42,7 +42,7 @@ Test#2 testNecessaryUserNameField
     [tags]  TC2
     Fills registration form
     sleep    2s
-    Registration Set Username        Usernamefieldpokemon            #<<<     username musn't repeat        don't work. will be success registration.
+    Registration Set Username        Usernamefieldpokemouon            #<<<     username musn't repeat        don't work. will be success registration.
     make screenshot    test2_step1
     Click registration
     Registration Page Should Be Open
@@ -54,7 +54,7 @@ Test#2.1 testNecessaryUserNameField
     [tags]  TC2
     Fills registration form
     sleep    2s
-    Registration Set Username        1234567891011121314            #<<<     username musn't repeat         don't work. will be success registration.
+    Registration Set Username        12345678910111251314            #<<<     username musn't repeat         don't work. will be success registration.
     make screenshot    test2.1_step1
     Click registration
     Registration Page Should Be Open
@@ -185,5 +185,4 @@ Test#5 testNotNecessaryRoleField
     Registration Set Role    0
     make screenshot    test5_step3
     list selection should be     id=registerForm:role       Read Only
-
 

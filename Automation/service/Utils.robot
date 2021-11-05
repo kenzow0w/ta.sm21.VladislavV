@@ -3,8 +3,7 @@ Library    SeleniumLibrary
 
 
 *** Variables ***
-${chromedriver}     C:\\Users\\Vlad\\OneDrive\\Документы\\tools\\chromedriver.exe
-@{BROWSER}      Chrome      FireFox
+@{BROWSER}      Chrome      FireFox     Edge
 ${url}      https://inventory.edu-netcracker.com/pages/registration.xhtml
 ${USERNAMEFIELD}        User123
 ${passwordField}        Password123$
@@ -14,11 +13,10 @@ ${roleField}        0
 ${Path}     C:\\Users\\Vlad\\PycharmProjects\\pythonProject2\\Resource
 ${TYPE OF FILE}     png
 
-
+#pabot --processes 2 TestStart.robot TestSearch.robot
 *** Keywords ***
 Go to Registration Page
     Open Browser    ${url}    ${BROWSER}[0]
-    sleep   2s
     Registration Page Should Be Open
 Registration Page Should Be Open
     sleep   2s
@@ -42,6 +40,7 @@ make screenshot
   sleep                         2s
   Capture Page Screenshot       ${filename}.${TYPE OF FILE}
   Log To Console                ${\n}Screenshot${filename}
+
 
 
 

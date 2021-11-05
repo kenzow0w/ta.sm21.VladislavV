@@ -4,11 +4,6 @@ Resource     Utils.robot
 Resource    LoginPage.robot
 
 
-#Suite Teardown    Close All Browsers
-#Library    Selenium2Library
-#Test Setup  Setup system under test
-#Test Teardown   SeleniumLibrary.Close Browser
-
 *** Variables ***
 
 *** Keywords ***

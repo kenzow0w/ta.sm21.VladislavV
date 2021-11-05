@@ -1,71 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211031 23:03:10.163" rpa="false" schemaversion="2">
-<suite id="s1" name="TestInventory" source="C:\Users\Vlad\PycharmProjects\pythonProject2\Automation\tests\TestInventory.robot">
-<kw name="Log" library="BuiltIn" type="SETUP">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211105 13:20:17.733" rpa="false" schemaversion="2">
+<suite id="s1" name="testAttributes" source="C:\Users\Vlad\PycharmProjects\pythonProject2\Automation\tests\testAttributes.robot">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
 <arg>Test start</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211031 23:03:10.633" level="INFO">Test start</msg>
-<status status="PASS" starttime="20211031 23:03:10.633" endtime="20211031 23:03:10.633"/>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211105 13:20:17.992" endtime="20211105 13:20:17.993"/>
 </kw>
-<test id="s1-t1" name="Test#10 ButtonEditEqualCreateObject2">
+<test id="s1-t1" name="Test Case#13 - 1">
 <kw name="Go to Inventory page" library="InventoryPage" type="SETUP">
+<arg>${username}</arg>
+<arg>${password}</arg>
 <kw name="Go to Start Page" library="StartPage">
-<arg>Volodin_admin</arg>
-<arg>Password123$</arg>
+<arg>${username}</arg>
+<arg>${password}</arg>
 <kw name="Go to Registration Page" library="Utils">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${BROWSER}[0]</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211031 23:03:10.639" level="INFO">Opening browser 'Chrome' to base url 'https://inventory.edu-netcracker.com/pages/registration.xhtml'.</msg>
-<status status="PASS" starttime="20211031 23:03:10.638" endtime="20211031 23:03:13.114"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211031 23:03:15.126" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211031 23:03:13.115" endtime="20211031 23:03:15.126"/>
+<msg timestamp="20211105 13:20:17.995" level="INFO">Opening browser 'Chrome' to base url 'https://inventory.edu-netcracker.com/pages/registration.xhtml'.</msg>
+<status status="PASS" starttime="20211105 13:20:17.995" endtime="20211105 13:20:19.240"/>
 </kw>
 <kw name="Registration Page Should Be Open" library="Utils">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211031 23:03:17.140" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211031 23:03:15.128" endtime="20211031 23:03:17.140"/>
+<msg timestamp="20211105 13:20:21.244" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211105 13:20:19.241" endtime="20211105 13:20:21.244"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Registration</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211031 23:03:17.148" level="INFO">Page title is 'Registration'.</msg>
-<status status="PASS" starttime="20211031 23:03:17.141" endtime="20211031 23:03:17.148"/>
+<msg timestamp="20211105 13:20:21.247" level="INFO">Page title is 'Registration'.</msg>
+<status status="PASS" starttime="20211105 13:20:21.244" endtime="20211105 13:20:21.248"/>
 </kw>
-<status status="PASS" starttime="20211031 23:03:15.127" endtime="20211031 23:03:17.148"/>
+<status status="PASS" starttime="20211105 13:20:19.241" endtime="20211105 13:20:21.248"/>
 </kw>
-<status status="PASS" starttime="20211031 23:03:10.637" endtime="20211031 23:03:17.149"/>
+<status status="PASS" starttime="20211105 13:20:17.995" endtime="20211105 13:20:21.248"/>
 </kw>
 <kw name="Click login" library="RegistrationPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = //a[@class='button']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:17.150" level="INFO">Clicking element 'xpath = //a[@class='button']'.</msg>
-<status status="PASS" starttime="20211031 23:03:17.150" endtime="20211031 23:03:17.574"/>
+<msg timestamp="20211105 13:20:21.248" level="INFO">Clicking element 'xpath = //a[@class='button']'.</msg>
+<status status="PASS" starttime="20211105 13:20:21.248" endtime="20211105 13:20:21.343"/>
 </kw>
-<status status="PASS" starttime="20211031 23:03:17.149" endtime="20211031 23:03:17.575"/>
+<status status="PASS" starttime="20211105 13:20:21.248" endtime="20211105 13:20:21.344"/>
 </kw>
 <kw name="Login Page Should Be Open" library="Utils">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211031 23:03:19.576" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211031 23:03:17.575" endtime="20211031 23:03:19.577"/>
+<msg timestamp="20211105 13:20:23.355" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211105 13:20:21.344" endtime="20211105 13:20:23.356"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Login Page</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211031 23:03:19.589" level="INFO">Page title is 'Login Page'.</msg>
-<status status="PASS" starttime="20211031 23:03:19.577" endtime="20211031 23:03:19.590"/>
+<msg timestamp="20211105 13:20:23.362" level="INFO">Page title is 'Login Page'.</msg>
+<status status="PASS" starttime="20211105 13:20:23.356" endtime="20211105 13:20:23.362"/>
 </kw>
-<status status="PASS" starttime="20211031 23:03:17.575" endtime="20211031 23:03:19.590"/>
+<status status="PASS" starttime="20211105 13:20:21.344" endtime="20211105 13:20:23.362"/>
 </kw>
 <kw name="Fills login form" library="LoginPage">
 <arg>${username}</arg>
@@ -73,285 +68,235 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211031 23:03:21.606" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211031 23:03:19.592" endtime="20211031 23:03:21.606"/>
+<msg timestamp="20211105 13:20:25.371" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211105 13:20:23.362" endtime="20211105 13:20:25.371"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name = j_username</arg>
 <arg>${userNameField}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:21.608" level="INFO">Typing text 'Volodin_admin' into text field 'name = j_username'.</msg>
-<status status="PASS" starttime="20211031 23:03:21.607" endtime="20211031 23:03:21.762"/>
+<msg timestamp="20211105 13:20:25.372" level="INFO">Typing text 'Volodin_admin' into text field 'name = j_username'.</msg>
+<status status="PASS" starttime="20211105 13:20:25.371" endtime="20211105 13:20:25.427"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211031 23:03:23.770" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211031 23:03:21.762" endtime="20211031 23:03:23.770"/>
+<msg timestamp="20211105 13:20:27.439" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211105 13:20:25.427" endtime="20211105 13:20:27.439"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>name = j_password</arg>
 <arg>${passwordField}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:23.771" level="INFO">Typing password into text field 'name = j_password'.</msg>
-<msg timestamp="20211031 23:03:23.843" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211031 23:03:23.941" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211031 23:03:23.770" endtime="20211031 23:03:23.942"/>
+<msg timestamp="20211105 13:20:27.440" level="INFO">Typing password into text field 'name = j_password'.</msg>
+<msg timestamp="20211105 13:20:27.468" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211105 13:20:27.504" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211105 13:20:27.440" endtime="20211105 13:20:27.504"/>
 </kw>
-<status status="PASS" starttime="20211031 23:03:19.591" endtime="20211031 23:03:23.942"/>
+<status status="PASS" starttime="20211105 13:20:23.362" endtime="20211105 13:20:27.504"/>
 </kw>
 <kw name="Click login" library="LoginPage">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>name = submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:23.944" level="INFO">Clicking button 'name = submit'.</msg>
-<status status="PASS" starttime="20211031 23:03:23.943" endtime="20211031 23:03:27.001"/>
+<msg timestamp="20211105 13:20:27.504" level="INFO">Clicking button 'name = submit'.</msg>
+<status status="PASS" starttime="20211105 13:20:27.504" endtime="20211105 13:20:27.803"/>
 </kw>
-<status status="PASS" starttime="20211031 23:03:23.942" endtime="20211031 23:03:27.001"/>
+<status status="PASS" starttime="20211105 13:20:27.504" endtime="20211105 13:20:27.803"/>
 </kw>
 <kw name="Start Page Should Be Open" library="Utils">
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211031 23:03:29.017" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211031 23:03:27.002" endtime="20211031 23:03:29.018"/>
+<msg timestamp="20211105 13:20:29.816" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211105 13:20:27.804" endtime="20211105 13:20:29.817"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Top</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211031 23:03:29.029" level="INFO">Page title is 'Top'.</msg>
-<status status="PASS" starttime="20211031 23:03:29.019" endtime="20211031 23:03:29.029"/>
+<msg timestamp="20211105 13:20:29.821" level="INFO">Page title is 'Top'.</msg>
+<status status="PASS" starttime="20211105 13:20:29.817" endtime="20211105 13:20:29.821"/>
 </kw>
-<status status="PASS" starttime="20211031 23:03:27.002" endtime="20211031 23:03:29.029"/>
+<status status="PASS" starttime="20211105 13:20:27.803" endtime="20211105 13:20:29.821"/>
 </kw>
-<status status="PASS" starttime="20211031 23:03:10.636" endtime="20211031 23:03:29.030"/>
+<status status="PASS" starttime="20211105 13:20:17.994" endtime="20211105 13:20:29.822"/>
 </kw>
 <kw name="Click inventory button" library="StartPage">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="inventory"]/a</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211031 23:03:29.032" endtime="20211031 23:03:29.058"/>
+<status status="PASS" starttime="20211105 13:20:29.822" endtime="20211105 13:20:29.831"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="inventory"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:29.060" level="INFO">Clicking element 'xpath://*[@id="inventory"]/a'.</msg>
-<status status="PASS" starttime="20211031 23:03:29.059" endtime="20211031 23:03:31.051"/>
+<msg timestamp="20211105 13:20:29.831" level="INFO">Clicking element 'xpath://*[@id="inventory"]/a'.</msg>
+<status status="PASS" starttime="20211105 13:20:29.831" endtime="20211105 13:20:30.156"/>
 </kw>
-<status status="PASS" starttime="20211031 23:03:29.030" endtime="20211031 23:03:31.052"/>
+<status status="PASS" starttime="20211105 13:20:29.822" endtime="20211105 13:20:30.157"/>
+</kw>
+<status status="PASS" starttime="20211105 13:20:17.994" endtime="20211105 13:20:30.157"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://*[.//text() = 'Ukraine']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211105 13:20:30.158" level="INFO">Clicking link 'xpath://*[.//text() = 'Ukraine']'.</msg>
+<status status="PASS" starttime="20211105 13:20:30.157" endtime="20211105 13:20:30.380"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://*[.//text() = 'Parameters']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211105 13:20:30.381" level="INFO">Clicking link 'xpath://*[.//text() = 'Parameters']'.</msg>
+<status status="PASS" starttime="20211105 13:20:30.381" endtime="20211105 13:20:30.437"/>
+</kw>
+<kw name="Check attributes">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://*[@class="attribute" and text()="Created By"]/following-sibling::td</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211105 13:20:30.438" endtime="20211105 13:20:30.658"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${createdBy}</var>
+<arg>xpath://*[@class="attribute" and text()="Created By"]/following-sibling::td</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211105 13:20:30.672" level="INFO">${createdBy} = Volodin_admin</msg>
+<status status="PASS" starttime="20211105 13:20:30.658" endtime="20211105 13:20:30.672"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n createdBy = ${createdBy}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211105 13:20:30.672" endtime="20211105 13:20:30.672"/>
+</kw>
+<kw name="Should Not Contain" library="BuiltIn">
+<arg>${createdBy}</arg>
+<arg>None</arg>
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<status status="PASS" starttime="20211105 13:20:30.672" endtime="20211105 13:20:30.673"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${createdWhen}</var>
+<arg>xpath://*[@class="attribute" and text()="Created When"]/following-sibling::td</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211105 13:20:30.689" level="INFO">${createdWhen} = 05-Nov-2021 07:47:24</msg>
+<status status="PASS" starttime="20211105 13:20:30.673" endtime="20211105 13:20:30.689"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n createdWhen = ${createdWhen}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211105 13:20:30.689" endtime="20211105 13:20:30.690"/>
+</kw>
+<kw name="Should Not Contain" library="BuiltIn">
+<arg>${createdWhen}</arg>
+<arg>None</arg>
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<status status="PASS" starttime="20211105 13:20:30.690" endtime="20211105 13:20:30.690"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${modifiedBy}</var>
+<arg>xpath://*[@class="attribute" and text()="Modified By"]/following-sibling::td</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211105 13:20:30.707" level="INFO">${modifiedBy} = Volodin_admin</msg>
+<status status="PASS" starttime="20211105 13:20:30.690" endtime="20211105 13:20:30.707"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n modifiedBy = ${modifiedBy}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211105 13:20:30.707" endtime="20211105 13:20:30.707"/>
+</kw>
+<kw name="Should Not Contain" library="BuiltIn">
+<arg>${modifiedBy}</arg>
+<arg>None</arg>
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<status status="PASS" starttime="20211105 13:20:30.707" endtime="20211105 13:20:30.708"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${modifiedWhen}</var>
+<arg>xpath://*[@class="attribute" and text()="Modified When"]/following-sibling::td</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211105 13:20:30.727" level="INFO">${modifiedWhen} = 05-Nov-2021 07:47:24</msg>
+<status status="PASS" starttime="20211105 13:20:30.708" endtime="20211105 13:20:30.727"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n modifiedWhen = ${modifiedWhen}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211105 13:20:30.727" endtime="20211105 13:20:30.727"/>
+</kw>
+<kw name="Should Not Contain" library="BuiltIn">
+<arg>${modifiedWhen}</arg>
+<arg>None</arg>
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<status status="PASS" starttime="20211105 13:20:30.728" endtime="20211105 13:20:30.728"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211031 23:03:33.066" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211031 23:03:31.052" endtime="20211031 23:03:33.066"/>
+<msg timestamp="20211105 13:20:33.733" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211105 13:20:30.728" endtime="20211105 13:20:33.733"/>
 </kw>
-<status status="PASS" starttime="20211031 23:03:10.635" endtime="20211031 23:03:33.067"/>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>class=logout</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211105 13:20:33.734" level="INFO">Clicking link 'class=logout'.</msg>
+<status status="PASS" starttime="20211105 13:20:33.734" endtime="20211105 13:20:33.878"/>
 </kw>
-<kw name="Enter information about country" library="InventoryPage">
-<arg>Brazil</arg>
-<arg>Rio</arg>
-<arg>2</arg>
-<kw name="Create country" library="InventoryPage">
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211031 23:03:34.088" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211031 23:03:33.069" endtime="20211031 23:03:34.088"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath://*[@class='button' and normalize-space() = 'Create country']</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211031 23:03:34.089" endtime="20211031 23:03:34.109"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[@class='button' and normalize-space() = 'Create country']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:34.110" level="INFO">Clicking element 'xpath://*[@class='button' and normalize-space() = 'Create country']'.</msg>
-<status status="PASS" starttime="20211031 23:03:34.109" endtime="20211031 23:03:34.559"/>
-</kw>
-<status status="PASS" starttime="20211031 23:03:33.068" endtime="20211031 23:03:34.560"/>
-</kw>
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<arg>Create country</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20211031 23:03:34.560" endtime="20211031 23:03:34.583"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Create country</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211031 23:03:34.591" level="INFO">Page title is 'Create country'.</msg>
-<status status="PASS" starttime="20211031 23:03:34.583" endtime="20211031 23:03:34.591"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://*[@id="j_idt74:name"]</arg>
-<arg>${country}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:34.592" level="INFO">Typing text 'Brazil' into text field 'xpath://*[@id="j_idt74:name"]'.</msg>
-<status status="PASS" starttime="20211031 23:03:34.591" endtime="20211031 23:03:34.779"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://*[@id="j_idt74:language"]</arg>
-<arg>${language}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:34.780" level="INFO">Typing text 'Rio' into text field 'xpath://*[@id="j_idt74:language"]'.</msg>
-<status status="PASS" starttime="20211031 23:03:34.779" endtime="20211031 23:03:34.917"/>
-</kw>
-<kw name="Select From List By Index" library="SeleniumLibrary">
-<arg>xpath://*[@id="j_idt74:continent"]</arg>
-<arg>${continent}</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20211031 23:03:34.918" level="INFO">Selecting options from selection list 'xpath://*[@id="j_idt74:continent"]' by index 2.</msg>
-<status status="PASS" starttime="20211031 23:03:34.918" endtime="20211031 23:03:35.102"/>
-</kw>
-<status status="PASS" starttime="20211031 23:03:33.067" endtime="20211031 23:03:35.102"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211031 23:03:39.115" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20211031 23:03:35.103" endtime="20211031 23:03:39.115"/>
-</kw>
-<kw name="Click save" library="InventoryPage">
-<doc>Save the entered data and over to next step.</doc>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211031 23:03:39.119" endtime="20211031 23:03:39.142"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:39.143" level="INFO">Clicking button 'xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
-<status status="PASS" starttime="20211031 23:03:39.142" endtime="20211031 23:03:40.152"/>
-</kw>
-<status status="PASS" starttime="20211031 23:03:39.116" endtime="20211031 23:03:40.152"/>
-</kw>
-<kw name="Click edit data" library="InventoryPage">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="table_header"]/table/tbody/tr/td/a</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211031 23:03:40.153" endtime="20211031 23:03:40.170"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="table_header"]/table/tbody/tr/td/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:40.171" level="INFO">Clicking element 'xpath://*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
-<status status="PASS" starttime="20211031 23:03:40.171" endtime="20211031 23:03:40.695"/>
-</kw>
-<status status="PASS" starttime="20211031 23:03:40.153" endtime="20211031 23:03:40.695"/>
-</kw>
-<kw name="Clear fields about country" library="InventoryPage">
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Brazil | Edit</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211031 23:03:40.706" level="INFO">Page title is 'Brazil | Edit'.</msg>
-<status status="PASS" starttime="20211031 23:03:40.698" endtime="20211031 23:03:40.706"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://*[@id="j_idt74:name"]</arg>
-<arg>${EMPTY}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:40.708" level="INFO">Typing text '' into text field 'xpath://*[@id="j_idt74:name"]'.</msg>
-<status status="PASS" starttime="20211031 23:03:40.706" endtime="20211031 23:03:40.845"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://*[@id="j_idt74:language"]</arg>
-<arg>${EMPTY}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:40.847" level="INFO">Typing text '' into text field 'xpath://*[@id="j_idt74:language"]'.</msg>
-<status status="PASS" starttime="20211031 23:03:40.845" endtime="20211031 23:03:40.981"/>
-</kw>
-<kw name="Select From List By Index" library="SeleniumLibrary">
-<arg>xpath://*[@id="j_idt74:continent"]</arg>
-<arg>0</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20211031 23:03:40.982" level="INFO">Selecting options from selection list 'xpath://*[@id="j_idt74:continent"]' by index 0.</msg>
-<status status="PASS" starttime="20211031 23:03:40.982" endtime="20211031 23:03:41.106"/>
-</kw>
-<status status="PASS" starttime="20211031 23:03:40.697" endtime="20211031 23:03:41.107"/>
-</kw>
-<kw name="Edit information about country" library="InventoryPage">
-<arg>Russia</arg>
-<arg>Moscow</arg>
-<arg>0</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://*[@id="j_idt74:name"]</arg>
-<arg>${country}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:41.109" level="INFO">Typing text 'Russia' into text field 'xpath://*[@id="j_idt74:name"]'.</msg>
-<status status="PASS" starttime="20211031 23:03:41.109" endtime="20211031 23:03:41.215"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://*[@id="j_idt74:language"]</arg>
-<arg>${language}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:41.216" level="INFO">Typing text 'Moscow' into text field 'xpath://*[@id="j_idt74:language"]'.</msg>
-<status status="PASS" starttime="20211031 23:03:41.215" endtime="20211031 23:03:41.317"/>
-</kw>
-<kw name="Select From List By Index" library="SeleniumLibrary">
-<arg>xpath://*[@id="j_idt74:continent"]</arg>
-<arg>${continent}</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20211031 23:03:41.319" level="INFO">Selecting options from selection list 'xpath://*[@id="j_idt74:continent"]' by index 0.</msg>
-<status status="PASS" starttime="20211031 23:03:41.317" endtime="20211031 23:03:41.386"/>
-</kw>
-<status status="PASS" starttime="20211031 23:03:41.108" endtime="20211031 23:03:41.387"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211031 23:03:45.398" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20211031 23:03:41.388" endtime="20211031 23:03:45.399"/>
-</kw>
-<kw name="Click save" library="InventoryPage">
-<doc>Save the entered data and over to next step.</doc>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211031 23:03:45.401" endtime="20211031 23:03:45.416"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211031 23:03:45.417" level="INFO">Clicking button 'xpath://*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
-<status status="PASS" starttime="20211031 23:03:45.416" endtime="20211031 23:03:46.167"/>
-</kw>
-<status status="PASS" starttime="20211031 23:03:45.400" endtime="20211031 23:03:46.167"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Russia</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211031 23:03:46.177" level="INFO">Page title is 'Russia'.</msg>
-<status status="PASS" starttime="20211031 23:03:46.169" endtime="20211031 23:03:46.177"/>
+<status status="PASS" starttime="20211105 13:20:30.438" endtime="20211105 13:20:33.878"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211031 23:03:46.178" endtime="20211031 23:03:48.363"/>
+<status status="PASS" starttime="20211105 13:20:33.879" endtime="20211105 13:20:35.988"/>
 </kw>
-<doc>This test case verifies enter information about equipment</doc>
-<tag>TC10</tag>
-<status status="PASS" starttime="20211031 23:03:10.633" endtime="20211031 23:03:48.365"/>
+<doc>This test case Check object types for attributes: Created By; Modified By; Created When; Modified when</doc>
+<tag>TC13</tag>
+<status status="PASS" starttime="20211105 13:20:17.993" endtime="20211105 13:20:35.989"/>
 </test>
-<kw name="Log" library="BuiltIn" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
 <arg>Test end</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211031 23:03:48.370" level="INFO">Test end</msg>
-<status status="PASS" starttime="20211031 23:03:48.369" endtime="20211031 23:03:48.370"/>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211105 13:20:35.990" endtime="20211105 13:20:35.991"/>
 </kw>
-<status status="PASS" starttime="20211031 23:03:10.165" endtime="20211031 23:03:48.370"/>
+<status status="PASS" starttime="20211105 13:20:17.734" endtime="20211105 13:20:35.991"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">TC10</stat>
+<stat pass="1" fail="0" skip="0">TC13</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TestInventory">TestInventory</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="testAttributes">testAttributes</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20211105 13:20:17.964" level="ERROR">Error in file 'C:\Users\Vlad\PycharmProjects\pythonProject2\Automation\service\InventoryPage.robot' on line 3: Importing library 'RemoteSwingLibrary' failed: ModuleNotFoundError: No module named 'RemoteSwingLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Vlad\Python310\Scripts\robot.exe
+  C:\Users\Vlad\Python310\python310.zip
+  C:\Users\Vlad\Python310\DLLs
+  C:\Users\Vlad\Python310\lib
+  C:\Users\Vlad\Python310
+  C:\Users\Vlad\Python310\lib\site-packages</msg>
+<msg timestamp="20211105 13:20:17.965" level="ERROR">Error in file 'C:\Users\Vlad\PycharmProjects\pythonProject2\Automation\service\InventoryPage.robot' on line 4: Importing library 'SwingLibrary' failed: ModuleNotFoundError: No module named 'SwingLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Vlad\Python310\Scripts\robot.exe
+  C:\Users\Vlad\Python310\python310.zip
+  C:\Users\Vlad\Python310\DLLs
+  C:\Users\Vlad\Python310\lib
+  C:\Users\Vlad\Python310
+  C:\Users\Vlad\Python310\lib\site-packages</msg>
+<msg timestamp="20211105 13:20:17.968" level="ERROR">Error in file 'C:\Users\Vlad\PycharmProjects\pythonProject2\Automation\service\InventoryPage.robot' on line 5: Importing library 'WhiteLibrary' failed: ModuleNotFoundError: No module named 'WhiteLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Vlad\Python310\Scripts\robot.exe
+  C:\Users\Vlad\Python310\python310.zip
+  C:\Users\Vlad\Python310\DLLs
+  C:\Users\Vlad\Python310\lib
+  C:\Users\Vlad\Python310
+  C:\Users\Vlad\Python310\lib\site-packages</msg>
 </errors>
 </robot>
